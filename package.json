@@ -1,0 +1,19 @@
+{
+  "name": "monorepos-example",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/**"
+  ],
+  "devDependencies": {
+    "craco": "^0.0.3",
+    "gh-pages": "^2.1.1"
+  },
+  "author": "Neha Ramchandani",
+  "license": "MIT",
+  "homepage": "https://nehawork.github.io/monorepo-react-app/",
+  "scripts": {
+    "predeploy": "yarn workspace @monorepos-example/web-app build",
+    "deploy": "gh-pages -d ./packages/web-app/build"
+  }
+}
