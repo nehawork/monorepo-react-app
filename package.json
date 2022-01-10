@@ -11,7 +11,7 @@
   },
   "author": "Neha Ramchandani",
   "license": "MIT",
-  "homepage": "https://nehawork.github.io/monorepo-react-app/",
+  "homepage": "https://nehawork.github.io/monorepo-react-app",
   "scripts": {
     "predeploy": "yarn workspace @monorepos-example/web-app build",
     "deploy": "gh-pages -d ./packages/web-app/build"
